@@ -24,7 +24,7 @@ export default function Rating(props) {
   }
 
   const [selectedRating, setSelectedRating] = React.useState(initialSelection);
-  const [buttonsClass, setButtonsClass] = React.useState(() => getNewButtonClasses(selectedRating));
+  const [buttonsClass, setButtonsClass] = React.useState(() => getNewButtonClasses(initialSelection));
 
   const getButtonProps = id => ({
     className: buttonsClass[id],
